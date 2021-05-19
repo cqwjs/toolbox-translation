@@ -154,22 +154,22 @@
 
 
     "unlock": {
-      "description": "Unlocks SSH access for Antminers S9",
+      "description": "解锁蚂蚁S9官固锁",
       "label": {
-        "hosts": "Miner(s)",
-        "upgrade_path": "Custom upgrade path",
-        "username": "Username",
-        "password": "Password",
-        "port": "Port",
-        "ssl": "Use SSL"
+        "hosts": "矿机名",
+        "upgrade_path": "自定义升级路径",
+        "username": "用户名",
+        "password": "密码",
+        "port": "端口",
+        "ssl": "使用SSL"
       },
       "help": {
-        "hosts": "Hostname (IP address) or path to a file with a list of miners",
-        "upgrade_path": "Custom path to upgrade file with payload for miner unlock",
-        "username": "Username for web interface",
-        "password": "Password for web interface",
-        "port": "Port of antminer web interface to use for unlocking (default - 80)",
-        "ssl": "Check to use SSL protocol"
+        "hosts": "矿机名（IP地址）或指定IP地址批量列表文件s",
+        "upgrade_path": "自定义破解文件上传目标路径",
+        "username": "矿机登录名",
+        "password": "矿机登录密码",
+        "port": "蚂蚁矿机网页后台解锁用端口（默认为80端口）",
+        "ssl": "检查使用SSL协议"
       }
     },
 
