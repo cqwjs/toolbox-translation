@@ -1,9 +1,9 @@
 {
-  "english": {
+  "chinese": {
     "cli": {
-      "description": "Provides tools for managing mining devices running Braiins OS[+]",
+      "description": "Braiins OS[+]矿机固件运维工具",
       "label": {
-        "subcommands": "subcommands",
+        "subcommands": "子命令",
         "subcommands_description": "Braiins OS tools in the toolbox"
       },
       "help": {
