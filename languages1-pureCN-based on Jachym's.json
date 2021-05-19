@@ -8,7 +8,7 @@
       },
       "help": {
         "version": "显示程序版本号并退出",
-        "verbose": "显示更多输出",
+        "verbose": "详情",
         "subcommands": "选择其中一种工具，可在其后加上--help运行获取使用帮助"
       }
     },
@@ -175,33 +175,33 @@
 
 
     "scan": {
-      "description": "Actively scan provided range of address for mining machines (including machines running factory firmware)",
+      "description": "扫描网段下矿机（包括安装官固的矿机）",
       "label": {
-        "hostname": "IP range",
-        "passwords": "Passwords",
-        "output": "Save output",
-        "jobs": "Jobs",
-        "verbose": "Verbose"
+        "hostname": "IP段",
+        "passwords": "密码",
+        "output": "保存结果",
+        "jobs": "工作",
+        "verbose": "详情"
       },
       "help": {
-        "hostname": "Subnet range or IP addresses used for scanning\nUse 10.10.10.0/24 for 10.10.10.0 - 10.10.10.255 range\nUse 10.10.0.0/16 for 10.10.0.0 - 10.10.255.255 range\nUse 10.0.0.0/8 for 10.0.0.0 - 10.255.255.255 range\nUse IP addresses separated with space for scanning only the specified addresses (e.g., 10.10.10.1 10.10.10.2)",
-        "passwords": "Path to file with list of possible passwords for connection",
-        "output": "Save list of found IP addresses to a file",
-        "jobs": "Number of concurrent jobs to scan network",
-        "verbose": "Report networking errors"
+        "hostname": "待扫的子网段或IP地址\n输入 10.10.10.0/24 就是 10.10.10.0 - 10.10.10.255 这个范围\n输入 10.10.0.0/16 就是 10.10.0.0 - 10.10.255.255 这个范围\n输入 10.0.0.0/8 就是 10.0.0.0 - 10.255.255.255 这个范围\n输入IP地址并在地址间空行即可扫描具体IP地址（如10.10.10.1 10.10.10.2）",
+        "passwords": "含有可能会用到的连接密码的列表文件路径",
+        "output": "保存扫描结果到文件",
+        "jobs": "网络扫描并行工作数",
+        "verbose": "报告网络错误"
       }
     },
 
 
     "listen": {
-      "description": "Listen for incoming broadcast from mining machines (including machines running factory firmware)",
+      "description": "监听来自矿机的广播（包括安装官固的矿机）",
       "label": {
-        "output": "Save output",
-        "format": "Format"
+        "output": "保存结果",
+        "format": "格式"
       },
       "help": {
-        "output": "Save list of found IP addresses to file",
-        "format": "Change default formatting string for device information"
+        "output": "保存IP地址监测结果到文件",
+        "format": "更改设备信息默认格式"
       }
     }
   },
