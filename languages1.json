@@ -8,7 +8,7 @@
       },
       "help": {
         "version": "显示程序版本号并退出",
-        "verbose": "增加输出详细程度",
+        "verbose": "显示更多输出",
         "subcommands": "选择其中一种工具，可在其后加上--help运行获取使用帮助"
       }
     },
@@ -87,68 +87,68 @@
     "update": {
       "description": "升级Braiins OS[+]固件及其组件",
       "label": {
-        "hosts": "Miner(s)",
-        "package": "Package",
-        "password": "Password",
-        "ignore": "Ignore non-responsive miners",
+        "hosts": "矿机名",
+        "package": "升级包",
+        "password": "密码",
+        "ignore": "忽略无响应矿机",
         "bos-mgmt-id": "Farm-ID"
       },
       "help": {
-        "hosts": "Hostname (IP address) or path to a file with a list of miners",
-        "package": "Package name for update (select 'firmware' for firmware update",
-        "password": "Administration password",
-        "ignore": "Do not halt on errors",
-        "bos-mgmt-id": "Update Braiins OS+ Manager identifier"
+        "hosts": "矿机名（IP地址）或指定IP地址批量列表文件",
+        "package": "固件升级包名（选择升级到哪个固件版本）",
+        "password": "矿机登录密码",
+        "ignore": "忽略错误",
+        "bos-mgmt-id": "更新Braiins OS+管家标识符"
       }
     },
 
 
     "config": {
-      "description": "Configure mining machines running Braiins OS[+]",
+      "description": "配置Braiins OS[+]固件",
       "label": {
-        "action": "Action",
-        "table": "List of miners",
-        "user": "Username",
-        "password": "Password",
-        "change-password": "Change Password",
-        "check": "Dry run",
-        "ignore": "Ignore"
+        "action": "操作",
+        "table": "IP地址批量列表",
+        "user": "用户名",
+        "password": "密码",
+        "change-password": "更改密码",
+        "check": "试运行检查",
+        "ignore": "忽略"
       },
       "help": {
-        "action": "Load, Save, Apply or Save & Apply",
-        "table": "Path to table file in CSV format",
-        "user": "Administration username",
-        "password": "Administration password",
-        "change-password": "Allow password change",
-        "check": "Do all configuration steps without applying the configuration",
-        "ignore": "Do not halt on errors"
+        "action": "Load加载, Save保存, Apply应用 或 Save & Apply保存并应用",
+        "table": "CSV表格文件的路径",
+        "user": "矿机登录名",
+        "password": "矿机登录密码",
+        "change-password": "允许更改密码",
+        "check": "执行所有的配置步骤但不实际进行配置",
+        "ignore": "忽略错误"
       }
     },
 
 
     "command": {
-      "description": "Run commands on selected miners. Use start/stop/restart for miner control or arbitrary shell commands.",
+      "description": "运行自定义命令。启动/停止/重启矿机，或执行任意内核Shell命令",
       "label": {
-        "hosts": "Miner(s)",
-        "command": "Command",
-        "auto": "Auto-select protocol",
-        "legacy": "Legacy mode",
-        "no-legacy": "No legacy mode",
-        "output": "Show output",
-        "output-hostname": "Show hostname output",
-        "password": "Password",
-        "jobs": "Jobs"
+        "hosts": "矿机名",
+        "command": "命令",
+        "auto": "自动选择协议",
+        "legacy": "旧版模式",
+        "no-legacy": "不使用旧版模式",
+        "output": "显示输出",
+        "output-hostname": "显示矿机名输出",
+        "password": "密码",
+        "jobs": "工作"
       },
       "help": {
-        "hosts": "Hostname (IP address) or path to a file with a list of miners",
-        "command": "Command to run ('start', 'stop', 'restart' or shell command)",
-        "auto": "Use SSH if RPC is not available",
-        "legacy": "Use SSH",
-        "no-legacy": "Use RPC",
-        "output": "Capture and print remote output",
-        "output-hostname": "Capture and print hostname output",
-        "password": "Administration password",
-        "jobs": "Number of concurrent jobs"
+        "hosts": "矿机名（IP地址）或指定IP地址批量列表文件",
+        "command": "运行诸如像（'start'启动, 'stop'停止, 'restart'重启或内核Shell命令）的命令",
+        "auto": "如RPC不可用，则使用SSH",
+        "legacy": "使用SSH",
+        "no-legacy": "使用RPC",
+        "output": "捕获并输出远程结果",
+        "output-hostname": "捕获并输出矿机用户名结果",
+        "password": "矿机登录密码",
+        "jobs": "并行工作数"
       }
     },
 
