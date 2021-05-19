@@ -1,37 +1,37 @@
 {
-  "english": {
+  "chinese": {
     "cli": {
-      "description": "Provides tools for managing mining devices running Braiins OS[+]",
+      "description": "Braiins OS[+]矿机固件运维工具",
       "label": {
-        "subcommands": "subcommands",
-        "subcommands_description": "Braiins OS tools in the toolbox"
+        "subcommands": "子命令",
+        "subcommands_description": "工具箱中的Braiins OS工具"
       },
       "help": {
-        "version": "Show program's version number and exit",
-        "verbose": "Increase output verbosity",
-        "subcommands": "Choose one of the tools and run with --help to retrieve additional info how to use it"
+        "version": "显示程序版本号并退出",
+        "verbose": "增加输出详细程度",
+        "subcommands": "选择其中一种工具，可在其后加上--help运行获取使用帮助"
       }
     },
 
 
     "install": {
-      "description": "Install Braiins OS[+] onto a mining machine",
+      "description": "安装Braiins OS[+]到矿机上",
       "label": {
-        "hosts": "Miner(s)",
-        "default": "Latest Stable release (recommended)",
-        "open-source": "Open-Source version (without auto-tuning)",
-        "nightly": "Nightly version",
-        "feeds-url": "Custom Feeds-URL",
-        "fw-version": "Firmware version",
-        "backup": "Backup",
-        "no-auto-upgrade": "No Auto-Upgrade",
-        "no-nand-backup": "No NAND-backup",
-        "pool-user": "Set Pool user",
-        "psu-power-limit": "Set Power limit",
-        "no-keep-network": "Don't migrate network settings",
-        "no-keep-pools": "Don't migrate pools settings",
-        "no-keep-hostname": "Don't keep hostname",
-        "keep-hostname": "Keep hostname",
+        "hosts": "矿工",
+        "default": "最新稳定发布版（推荐）",
+        "open-source": "开源版（不带自动调整）",
+        "nightly": "预先发布版",
+        "feeds-url": "自定义固件更新下载URL地址",
+        "fw-version": "固件版本",
+        "backup": "备份",
+        "no-auto-upgrade": "不开启自动升级",
+        "no-nand-backup": "不备份矿机NAND上的现有固件",
+        "pool-user": "配置矿池用户",
+        "psu-power-limit": "设定功耗值",
+        "no-keep-network": "不保留现有网络配置",
+        "no-keep-pools": "不保留现有矿池配置",
+        "no-keep-hostname": "不保留现有矿机名",
+        "keep-hostname": "保留现有矿机名",
         "no-wait": "No wait",
         "dry-run": "Dry run",
         "post-upgrade": "Post-upgrade",
